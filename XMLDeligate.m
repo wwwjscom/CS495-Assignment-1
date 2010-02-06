@@ -12,6 +12,8 @@
 
 @implementation XMLDeligate
 
+@synthesize truncateAt;
+
 - (id)initWithLimit:(int)theLimit {
 	[super init];
 	
@@ -20,12 +22,12 @@
 	item_open			= NO;
 	title_open			= NO;
 	date_open			= NO;
+	content_open		= NO;
 	
 	limit				= theLimit;
 	
 	feed_title			= [[[NSMutableString alloc] init] autorelease];
 	stories				= [[[NSMutableArray alloc] initWithCapacity:100] autorelease];
-	//title				= [[[NSMutableString alloc] init] autorelease];
 	story				= [[[Story alloc] init] autorelease];
 	
 	return self;
@@ -40,7 +42,7 @@
 	}
 	
 	if (item_open && [elementName isEqualToString:@"title"]) {
-		title = [[NSMutableString alloc] init];
+		title = [[[NSMutableString alloc] init] autorelease];
 		title_open = YES;
 		return;
 	}
@@ -48,6 +50,13 @@
 	if ([elementName isEqualToString:@"published"] || [elementName isEqualToString:@"pubDate"]) {
 		date = [[[NSMutableString alloc] init] autorelease];
 		date_open = YES;
+		return;
+	}
+	
+	if ([elementName isEqualToString:@"content"] || [elementName isEqualToString:@"description"]) {
+		content = [[[NSMutableString alloc] init] autorelease];
+		content_open = YES;
+		return;
 	}
 	
 	if (!item_open && !title_open && [elementName isEqualToString:@"title"]) {
@@ -63,6 +72,11 @@
 	
 	if (date_open) {
 		[date appendString:string];
+		return;
+	}
+	
+	if (content_open) {
+		[content appendString:string];
 		return;
 	}
 	
@@ -92,6 +106,21 @@
 		story.date = date;
 		[date release];
 		date_open = NO;
+	}
+	
+	if (content_open && ([elementName isEqualToString:@"content"] || [elementName isEqualToString:@"description"])) {
+		
+		// Get rid of new lines
+		content = [content stringByReplacingOccurrencesOfString:@"\n" withString:@""]; // I'm aware of this notice, but to correct it would
+																					   // yield at least 2 lines of useless code
+		
+		if ([content length] > truncateAt) {
+			story.content = [content substringToIndex:truncateAt];
+		} else {
+			story.content = content;
+		}
+
+		content_open = NO;
 	}
 	
 	if (feed_title_incoming && [elementName isEqualToString:@"title"]) {

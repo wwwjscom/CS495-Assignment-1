@@ -29,6 +29,8 @@ int main (int argc, const char * argv[]) {
 			XMLDeligate *myDeligate = [[XMLDeligate alloc] initWithLimit:feed.limit];
 			[parser setDelegate:myDeligate];
 			
+			myDeligate.truncateAt = feed.truncateAt;
+			
 			// Begin the parsing & notify the deligate
 			[parser parse];
 			

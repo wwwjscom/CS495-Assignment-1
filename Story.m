@@ -19,6 +19,7 @@
 -(void)toLog {
 	NSLog(@"- %@",title);
 	NSLog(@"-- Published on %@",date);
+	NSLog(@"-- %@",content);
 }
 
 @end
