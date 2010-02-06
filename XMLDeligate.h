@@ -13,10 +13,14 @@
 	NSMutableString *title;
 	NSMutableArray *stories;
 	int limit;
+	BOOL feed_title_incoming;
+	BOOL item_open;
+	BOOL title_open;
 }
 
-- (id)initWithLimit:(int *)theLimit;
+- (id)initWithLimit:(int)theLimit;
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict;
 - (void)showStories;
+- (void)dealloc;
 
 @end

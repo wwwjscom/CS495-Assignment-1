@@ -11,19 +11,20 @@
 
 @implementation XMLDeligate
 
-BOOL feed_title_incoming = NO;
-BOOL item_open = NO;
-BOOL title_open = NO;
-NSMutableString *title;
-
-- (id)initWithLimit:(int *)theLimit {
+- (id)initWithLimit:(int)theLimit {
 	[super init];
 	
-	limit = theLimit;
+	// Setup the bools
+	feed_title_incoming = NO;
+	item_open			= NO;
+	title_open			= NO;
 	
-	feed_title = [[[NSMutableString alloc] init] autorelease];
-	stories = [[[NSMutableArray alloc] initWithCapacity:100] autorelease];
-	title = [[NSMutableString alloc] init];
+	limit				= theLimit;
+	
+	feed_title			= [[[NSMutableString alloc] init] autorelease];
+	stories				= [[[NSMutableArray alloc] initWithCapacity:100] autorelease];
+	title				= [[[NSMutableString alloc] init] autorelease];
+	
 	return self;
 }
 
@@ -71,7 +72,6 @@ NSMutableString *title;
 	
 	if (feed_title_incoming && [elementName isEqualToString:@"title"]) {
 		feed_title_incoming = NO;
-		return;
 	}
 }
 
@@ -97,12 +97,16 @@ NSMutableString *title;
 		
 		NSLog(@"Found %d stories",feed_size);
 		
-		for (NSString *s in stories) {
+		for (NSString *s in stories)
 			NSLog(@"- %@",s);
-		}
 	}
-	
 	NSLog(@"\n");
+}
+
+- (void)dealloc {
+	[feed_title release];
+	[stories release];
+	[super dealloc];
 }
 	
 @end

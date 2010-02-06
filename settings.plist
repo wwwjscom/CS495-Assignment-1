@@ -10,7 +10,7 @@
 			<key>Enabled</key>
 			<true/>
 			<key>MaxNewsItems</key>
-			<integer>10</integer>
+			<integer>100</integer>
 		</dict>
 		<dict>
 			<key>FeedURL</key>

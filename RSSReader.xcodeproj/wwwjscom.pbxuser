@@ -72,14 +72,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 287118499;
-			PBXWorkspaceStateSaveDate = 287118499;
-		};
-		perUserProjectItems = {
-			CED76A07111D1332009D19C7 = CED76A07111D1332009D19C7 /* PBXTextBookmark */;
-			CED76A0E111D1358009D19C7 = CED76A0E111D1358009D19C7 /* PBXTextBookmark */;
-			CED76A0F111D1358009D19C7 = CED76A0F111D1358009D19C7 /* PBXTextBookmark */;
-			CED76A11111D149D009D19C7 = CED76A11111D149D009D19C7 /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 287119635;
+			PBXWorkspaceStateSaveDate = 287119635;
 		};
 		sourceControlManager = CE92FF1D111B454D00E88E3B /* Source Control */;
 		userBuildSettings = {
@@ -166,7 +160,7 @@
 	};
 	CED7671E111B87EF009D19C7 /* XMLDeligate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1328, 781}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1328, 760}}";
 			sepNavSelRange = "{17, 0}";
 			sepNavVisRange = "{0, 569}";
 			sepNavWindowFrame = "{{37, 833}, {750, 558}}";
@@ -175,49 +169,9 @@
 	CED7671F111B87EF009D19C7 /* XMLDeligate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1335, 1417}}";
-			sepNavSelRange = "{2307, 0}";
-			sepNavVisRange = "{0, 1556}";
+			sepNavSelRange = "{192, 97}";
+			sepNavVisRange = "{21, 1535}";
 			sepNavWindowFrame = "{{61, 813}, {750, 558}}";
 		};
-	};
-	CED76A07111D1332009D19C7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
-		name = "XMLDeligate.m: 95";
-		rLen = 0;
-		rLoc = 2307;
-		rType = 0;
-		vrLen = 1556;
-		vrLoc = 0;
-	};
-	CED76A0E111D1358009D19C7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = CED7671E111B87EF009D19C7 /* XMLDeligate.h */;
-		name = "XMLDeligate.h: 2";
-		rLen = 0;
-		rLoc = 17;
-		rType = 0;
-		vrLen = 569;
-		vrLoc = 0;
-	};
-	CED76A0F111D1358009D19C7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* RSSReader.m */;
-		name = "RSSReader.m: 38";
-		rLen = 0;
-		rLoc = 1289;
-		rType = 0;
-		vrLen = 1277;
-		vrLoc = 0;
-	};
-	CED76A11111D149D009D19C7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* RSSReader.m */;
-		name = "RSSReader.m: 39";
-		rLen = 0;
-		rLoc = 1293;
-		rType = 0;
-		vrLen = 1277;
-		vrLoc = 0;
 	};
 }

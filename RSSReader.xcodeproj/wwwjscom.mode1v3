@@ -271,7 +271,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -307,8 +306,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -323,16 +320,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>RSSReader.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>CED76A11111D149D009D19C7</string>
-										<key>history</key>
-										<array>
-											<string>CED76A07111D1332009D19C7</string>
-											<string>CED76A0E111D1358009D19C7</string>
-											<string>CED76A0F111D1358009D19C7</string>
-										</array>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -343,16 +330,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1068, 813}}</string>
+								<string>{{0, 0}, {1068, 799}}</string>
 								<key>RubberWindowFrame</key>
 								<string>1204 153 1330 1265 0 0 2560 1418 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>813pt</string>
+							<string>799pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -363,14 +352,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 818}, {1068, 406}}</string>
+								<string>{{0, 804}, {1068, 420}}</string>
 								<key>RubberWindowFrame</key>
 								<string>1204 153 1330 1265 0 0 2560 1418 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>406pt</string>
+							<string>420pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -389,9 +378,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>CED767DA111BFB9C009D19C7</string>
+				<string>CED76A5A111D190D009D19C7</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>CED767DB111BFB9C009D19C7</string>
+				<string>CED76A5B111D190D009D19C7</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -529,12 +518,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>CED7680E111BFE80009D19C7</string>
-		<string>CED7680F111BFE80009D19C7</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>CED76A64111D190D009D19C7</string>
+		<string>CED76A65111D190D009D19C7</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>CE92FF1B111B454D00E88E3B</string>
 		<string>/Users/wwwjscom/Documents/RSSReader/RSSReader.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>1204 153 1330 1265 0 0 2560 1418 </string>
@@ -558,7 +547,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RSSReader.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -575,8 +564,6 @@
 							<string>217pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -616,7 +603,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>CE92FF1B111B454D00E88E3B</string>
-				<string>CED767D6111BFB98009D19C7</string>
+				<string>CED76A5C111D190D009D19C7</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -660,8 +647,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 202}}</string>
-											<string>{{316, 0}, {378, 202}}</string>
+											<string>{{0, 0}, {316, 203}}</string>
+											<string>{{316, 0}, {378, 203}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -676,8 +663,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 202}}</string>
-											<string>{{0, 202}, {694, 179}}</string>
+											<string>{{0, 0}, {694, 203}}</string>
+											<string>{{0, 203}, {694, 178}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -710,7 +697,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 202}}</string>
+									<string>{{316, 0}, {378, 203}}</string>
 									<key>RubberWindowFrame</key>
 									<string>722 574 694 422 0 0 2560 1418 </string>
 								</dict>
@@ -738,13 +725,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>CED76807111BFE80009D19C7</string>
+				<string>CED76A5D111D190D009D19C7</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>CED76808111BFE80009D19C7</string>
-				<string>CED76809111BFE80009D19C7</string>
-				<string>CED7680A111BFE80009D19C7</string>
-				<string>CED7680B111BFE80009D19C7</string>
-				<string>CED7680C111BFE80009D19C7</string>
+				<string>CED76A5E111D190D009D19C7</string>
+				<string>CED76A5F111D190D009D19C7</string>
+				<string>CED76A60111D190D009D19C7</string>
+				<string>CED76A61111D190D009D19C7</string>
+				<string>CED76A62111D190D009D19C7</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -908,7 +895,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>CED7680D111BFE80009D19C7</string>
+				<string>CED76A63111D190D009D19C7</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -918,7 +905,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
