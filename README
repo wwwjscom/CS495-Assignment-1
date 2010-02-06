@@ -1,0 +1,11 @@
+Jason Soo
+
+I tried getting instruments up and running, but couldn't tell if I 
+A) wasn't leaking memory or 
+B) I wasn't using it correctly
+
+So most everything in my app is autoreleased.
+
+I coded the following extra parts:
+* Retrieve the title of the feed and print it out before the list of story titles
+* Include under each title a brief excerpt (perhaps of configurabe length) from the story text and its date of publication -- Note I did not strip the HTMl tags.

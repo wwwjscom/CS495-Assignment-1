@@ -35,85 +35,97 @@
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
 	
+	// Opening an item/entry
 	if ([elementName isEqualToString:@"item"] || [elementName isEqualToString:@"entry"]) {
 		item_open = YES;
 		story				= [[[Story alloc] init] autorelease];
 		return;
 	}
 	
+	// Opening a title
 	if (item_open && [elementName isEqualToString:@"title"]) {
 		title = [[[NSMutableString alloc] init] autorelease];
 		title_open = YES;
 		return;
 	}
 	
+	// Opening date
 	if ([elementName isEqualToString:@"published"] || [elementName isEqualToString:@"pubDate"]) {
 		date = [[[NSMutableString alloc] init] autorelease];
 		date_open = YES;
 		return;
 	}
 	
+	// Opening content
 	if ([elementName isEqualToString:@"content"] || [elementName isEqualToString:@"description"]) {
 		content = [[[NSMutableString alloc] init] autorelease];
 		content_open = YES;
 		return;
 	}
 	
+	// Opening feed title
 	if (!item_open && !title_open && [elementName isEqualToString:@"title"]) {
 		feed_title_incoming = YES;
 	}
 }
 	
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+	// Set title
 	if (title_open) {
 		[title appendString:string];
 		return;
 	}
 	
+	// Set date
 	if (date_open) {
 		[date appendString:string];
 		return;
 	}
 	
+	// Set content
 	if (content_open) {
 		[content appendString:string];
 		return;
 	}
 	
+	// Set feed title
 	if (feed_title_incoming) {
 		[feed_title appendString:string];
 	}
 }
 	
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
+	
+	// Close title
 	if (item_open && [elementName isEqualToString:@"title"]) {
 		title_open = NO;
-		
 		story.title = title;
 		[title release];
 		return;
 	}
 	
+	// Close item/entry
 	if (!feed_title_incoming && ([elementName isEqualToString:@"item"] || [elementName isEqualToString:@"entry"])) {
 		item_open = NO;
-		
 		// Push the story onto the stories array
 		[stories addObject:story];
 		return;
 	}
 	
+	// Close date
 	if (date_open && ([elementName isEqualToString:@"published"] || [elementName isEqualToString:@"pubDate"])) {
 		story.date = date;
 		[date release];
 		date_open = NO;
 	}
 	
+	// Close content
 	if (content_open && ([elementName isEqualToString:@"content"] || [elementName isEqualToString:@"description"])) {
 		
 		// Get rid of new lines
 		content = [content stringByReplacingOccurrencesOfString:@"\n" withString:@""]; // I'm aware of this notice, but to correct it would
 																					   // yield at least 2 lines of useless code
-		
+		// Truncate
 		if ([content length] > truncateAt) {
 			story.content = [content substringToIndex:truncateAt];
 		} else {
@@ -123,11 +135,13 @@
 		content_open = NO;
 	}
 	
+	// Close feed title
 	if (feed_title_incoming && [elementName isEqualToString:@"title"]) {
 		feed_title_incoming = NO;
 	}
 }
 
+// Formats the stories and outputs them to NSLog
 - (void)showStories {
 
 	int feed_size = (int)[stories count];

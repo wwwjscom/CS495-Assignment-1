@@ -22,4 +22,8 @@
 	NSLog(@"-- %@",content);
 }
 
+-(void)dealloc {
+	[super dealloc];
+}
+
 @end

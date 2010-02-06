@@ -24,4 +24,9 @@
 	return self;
 }
 
+-(void)dealloc {
+	[feedURL release];
+	[super dealloc];
+}
+
 @end

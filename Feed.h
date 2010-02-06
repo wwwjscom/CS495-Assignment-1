@@ -22,5 +22,6 @@
 @property int truncateAt;
 
 -(id)initWithDic:(NSDictionary *)dic;
+-(void)dealloc;
 
 @end

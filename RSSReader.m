@@ -6,6 +6,7 @@ int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
 	// Read the plist into a dictionary
+	// These aren't called with alloc, etc...so don't have to be released...right?
 	NSDictionary *settingsDict = [NSDictionary dictionaryWithContentsOfFile:
 								  @"settings.plist"];
 	NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
@@ -13,6 +14,7 @@ int main (int argc, const char * argv[]) {
 	
 	
 	// Find the URL Feed
+	// This isn't called with alloc, etc...so don't have to be released...right?
 	NSArray *set = [settings arrayForKey:@"Feeds"];
 	
 	// Iterate over all the feeds
@@ -37,10 +39,10 @@ int main (int argc, const char * argv[]) {
 			// Display the cached stories
 			[myDeligate showStories];
 			
-			//[myDeligate release]; // Errors out...
+			//[myDeligate release]; // Errors out...?!?
 		}
 	}
-	
+		
     [pool drain];
     return 0;
 }

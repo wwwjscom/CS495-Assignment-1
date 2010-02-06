@@ -17,6 +17,7 @@
 }
 
 - (void)toLog;
+- (void)dealloc;
 
 @property (retain) NSString *title;
 @property (retain) NSString *date;
