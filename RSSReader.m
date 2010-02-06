@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "XMLDeligate.h"
+#import	"Feed.h"
 
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
@@ -16,19 +17,16 @@ int main (int argc, const char * argv[]) {
 	
 	// Iterate over all the feeds
 	for (NSDictionary *dic in set) {
-		
+		Feed *feed = [[Feed alloc] initWithDic:dic];
+
 		// Only continue if the feed is indeed enabled
-		if ([[dic objectForKey:@"Enabled"] boolValue]) {
-			
-			NSString *url = [dic objectForKey:@"FeedURL"];
-			NSURL *feedURL = [NSURL URLWithString:url];
+		if (feed.enabled) {
 			
 			// Setup the XML parser
-			NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:feedURL];
+			NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:feed.feedURL];
 			
 			// Setup the deligate for the XML parsing
-			NSString *limit = [dic objectForKey:@"MaxNewsItems"];
-			XMLDeligate *myDeligate = [[XMLDeligate alloc] initWithLimit:[limit intValue]];
+			XMLDeligate *myDeligate = [[XMLDeligate alloc] initWithLimit:feed.limit];
 			[parser setDelegate:myDeligate];
 			
 			// Begin the parsing & notify the deligate
