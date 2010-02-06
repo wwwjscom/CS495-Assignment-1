@@ -99,6 +99,19 @@
 			CE00F8BC111D241C007F8616 /* PBXTextBookmark */ = CE00F8BC111D241C007F8616 /* PBXTextBookmark */;
 			CE00F8BF111D2528007F8616 /* PBXTextBookmark */ = CE00F8BF111D2528007F8616 /* PBXTextBookmark */;
 			CE00F8C0111D2528007F8616 /* PBXTextBookmark */ = CE00F8C0111D2528007F8616 /* PBXTextBookmark */;
+			CE00F8DC111D2BEF007F8616 /* PlistBookmark */ = CE00F8DC111D2BEF007F8616 /* PlistBookmark */;
+			CE00F8DD111D2BEF007F8616 /* PBXTextBookmark */ = CE00F8DD111D2BEF007F8616 /* PBXTextBookmark */;
+			CE00F8DE111D2BEF007F8616 /* PBXTextBookmark */ = CE00F8DE111D2BEF007F8616 /* PBXTextBookmark */;
+			CE00F8DF111D2BEF007F8616 /* PBXTextBookmark */ = CE00F8DF111D2BEF007F8616 /* PBXTextBookmark */;
+			CE00F8E0111D2BEF007F8616 /* PBXTextBookmark */ = CE00F8E0111D2BEF007F8616 /* PBXTextBookmark */;
+			CE00F931111D2FB3007F8616 /* XCBuildMessageTextBookmark */ = CE00F931111D2FB3007F8616 /* XCBuildMessageTextBookmark */;
+			CE00F932111D2FB3007F8616 /* PBXTextBookmark */ = CE00F932111D2FB3007F8616 /* PBXTextBookmark */;
+			CE00F944111D307F007F8616 /* PBXTextBookmark */ = CE00F944111D307F007F8616 /* PBXTextBookmark */;
+			CE00F945111D307F007F8616 /* PBXTextBookmark */ = CE00F945111D307F007F8616 /* PBXTextBookmark */;
+			CE00F946111D307F007F8616 /* PBXTextBookmark */ = CE00F946111D307F007F8616 /* PBXTextBookmark */;
+			CE00F947111D307F007F8616 /* PBXTextBookmark */ = CE00F947111D307F007F8616 /* PBXTextBookmark */;
+			CE00F94E111D30F0007F8616 /* PBXTextBookmark */ = CE00F94E111D30F0007F8616 /* PBXTextBookmark */;
+			CE00F94F111D30F0007F8616 /* PBXTextBookmark */ = CE00F94F111D30F0007F8616 /* PBXTextBookmark */;
 		};
 		sourceControlManager = CE92FF1D111B454D00E88E3B /* Source Control */;
 		userBuildSettings = {
@@ -207,7 +220,7 @@
 		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
 		name = "XMLDeligate.m: 70";
 		rLen = 0;
-		rLoc = 1774;
+		rLoc = 2219;
 		rType = 0;
 		vrLen = 1278;
 		vrLoc = 1271;
@@ -217,10 +230,157 @@
 		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
 		name = "XMLDeligate.m: 70";
 		rLen = 0;
-		rLoc = 1774;
+		rLoc = 2219;
 		rType = 0;
 		vrLen = 1618;
 		vrLoc = 265;
+	};
+	CE00F8C3111D261C007F8616 /* Story.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 760}}";
+			sepNavSelRange = "{293, 0}";
+			sepNavVisRange = "{0, 412}";
+		};
+	};
+	CE00F8C4111D261C007F8616 /* Story.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 760}}";
+			sepNavSelRange = "{286, 0}";
+			sepNavVisRange = "{0, 356}";
+		};
+	};
+	CE00F8DC111D2BEF007F8616 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = CE92FF26111B48DC00E88E3B /* settings.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			Feeds,
+			1,
+			FeedURL,
+		);
+		name = /Users/wwwjscom/Documents/RSSReader/settings.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	CE00F8DD111D2BEF007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED76A1A111D1509009D19C7 /* Feed.h */;
+		name = "Feed.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 0;
+	};
+	CE00F8DE111D2BEF007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED7671E111B87EF009D19C7 /* XMLDeligate.h */;
+		name = "XMLDeligate.h: 10";
+		rLen = 0;
+		rLoc = 178;
+		rType = 0;
+		vrLen = 722;
+		vrLoc = 0;
+	};
+	CE00F8DF111D2BEF007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
+		name = "XMLDeligate.m: 32";
+		rLen = 0;
+		rLoc = 657;
+		rType = 0;
+		vrLen = 1493;
+		vrLoc = 35;
+	};
+	CE00F8E0111D2BEF007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
+		name = "XMLDeligate.m: 118";
+		rLen = 0;
+		rLoc = 2886;
+		rType = 0;
+		vrLen = 1296;
+		vrLoc = 1893;
+	};
+	CE00F931111D2FB3007F8616 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Request for member 'toLog' in something not a structure or union";
+		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 123;
+		rType = 1;
+	};
+	CE00F932111D2FB3007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
+		name = "XMLDeligate.m: 129";
+		rLen = 0;
+		rLoc = 3035;
+		rType = 0;
+		vrLen = 246;
+		vrLoc = 3029;
+	};
+	CE00F944111D307F007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE00F8C3111D261C007F8616 /* Story.h */;
+		name = "Story.h: 19";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 412;
+		vrLoc = 0;
+	};
+	CE00F945111D307F007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE00F8C4111D261C007F8616 /* Story.m */;
+		name = "Story.m: 19";
+		rLen = 0;
+		rLoc = 286;
+		rType = 0;
+		vrLen = 356;
+		vrLoc = 0;
+	};
+	CE00F946111D307F007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
+		name = "XMLDeligate.m: 129";
+		rLen = 0;
+		rLoc = 3045;
+		rType = 0;
+		vrLen = 1325;
+		vrLoc = 2027;
+	};
+	CE00F947111D307F007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
+		name = "XMLDeligate.m: 79";
+		rLen = 0;
+		rLoc = 1969;
+		rType = 0;
+		vrLen = 1453;
+		vrLoc = 1642;
+	};
+	CE00F94E111D30F0007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
+		name = "XMLDeligate.m: 124";
+		rLen = 0;
+		rLoc = 3035;
+		rType = 0;
+		vrLen = 229;
+		vrLoc = 2927;
+	};
+	CE00F94F111D30F0007F8616 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */;
+		name = "XMLDeligate.m: 28";
+		rLen = 0;
+		rLoc = 534;
+		rType = 0;
+		vrLen = 1537;
+		vrLoc = 0;
 	};
 	CE92FF12111B453C00E88E3B /* RSSReader */ = {
 		isa = PBXExecutable;
@@ -275,18 +435,33 @@
 	};
 	CED7671E111B87EF009D19C7 /* XMLDeligate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1328, 760}}";
-			sepNavSelRange = "{312, 0}";
-			sepNavVisRange = "{0, 648}";
+			sepNavIntBoundsRect = "{{0, 0}, {1328, 737}}";
+			sepNavSelRange = "{178, 0}";
+			sepNavVisRange = "{0, 722}";
 			sepNavWindowFrame = "{{37, 833}, {750, 558}}";
 		};
 	};
 	CED7671F111B87EF009D19C7 /* XMLDeligate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1335, 1469}}";
-			sepNavSelRange = "{1774, 0}";
-			sepNavVisRange = "{265, 1618}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{3085, 62}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3156}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1335, 1664}}";
+			sepNavSelRange = "{534, 0}";
+			sepNavVisRange = "{0, 1537}";
 			sepNavWindowFrame = "{{61, 813}, {750, 558}}";
+		};
+	};
+	CED76A1A111D1509009D19C7 /* Feed.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 760}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 357}";
+		};
+	};
+	CED76A1B111D1509009D19C7 /* Feed.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 760}}";
+			sepNavSelRange = "{233, 39}";
+			sepNavVisRange = "{0, 468}";
 		};
 	};
 }

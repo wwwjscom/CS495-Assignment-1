@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8DD76F9A0486AA7600D96B5E /* RSSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* RSSReader.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		CE00F8C5111D261C007F8616 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = CE00F8C4111D261C007F8616 /* Story.m */; };
 		CE92FF28111B4C6200E88E3B /* settings.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE92FF26111B48DC00E88E3B /* settings.plist */; };
 		CED76720111B87EF009D19C7 /* XMLDeligate.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7671F111B87EF009D19C7 /* XMLDeligate.m */; };
 		CED76A1C111D1509009D19C7 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = CED76A1B111D1509009D19C7 /* Feed.m */; };
@@ -33,6 +34,8 @@
 		32A70AAB03705E1F00C91783 /* RSSReader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSReader_Prefix.pch; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* RSSReader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RSSReader; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* RSSReader.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RSSReader.1; sourceTree = "<group>"; };
+		CE00F8C3111D261C007F8616 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		CE00F8C4111D261C007F8616 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
 		CE92FF26111B48DC00E88E3B /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
 		CED7671E111B87EF009D19C7 /* XMLDeligate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDeligate.h; sourceTree = "<group>"; };
 		CED7671F111B87EF009D19C7 /* XMLDeligate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDeligate.m; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CE00F8C3111D261C007F8616 /* Story.h */,
+				CE00F8C4111D261C007F8616 /* Story.m */,
 				CE92FF26111B48DC00E88E3B /* settings.plist */,
 				32A70AAB03705E1F00C91783 /* RSSReader_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* RSSReader.m */,
@@ -147,6 +152,7 @@
 				8DD76F9A0486AA7600D96B5E /* RSSReader.m in Sources */,
 				CED76720111B87EF009D19C7 /* XMLDeligate.m in Sources */,
 				CED76A1C111D1509009D19C7 /* Feed.m in Sources */,
+				CE00F8C5111D261C007F8616 /* Story.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
