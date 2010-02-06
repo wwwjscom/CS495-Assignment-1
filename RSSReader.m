@@ -17,13 +17,13 @@ int main (int argc, const char * argv[]) {
 	
 	// Iterate over all the feeds
 	for (NSDictionary *dic in set) {
-		Feed *feed = [[Feed alloc] initWithDic:dic];
+		Feed *feed = [[[Feed alloc] initWithDic:dic] autorelease];
 
 		// Only continue if the feed is indeed enabled
 		if (feed.enabled) {
 			
 			// Setup the XML parser
-			NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:feed.feedURL];
+			NSXMLParser *parser = [[[NSXMLParser alloc] initWithContentsOfURL:feed.feedURL] autorelease];
 			
 			// Setup the deligate for the XML parsing
 			XMLDeligate *myDeligate = [[XMLDeligate alloc] initWithLimit:feed.limit];
@@ -34,6 +34,8 @@ int main (int argc, const char * argv[]) {
 			
 			// Display the cached stories
 			[myDeligate showStories];
+			
+			//[myDeligate release]; // Errors out...
 		}
 	}
 	
